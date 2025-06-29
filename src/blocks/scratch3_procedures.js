@@ -43,7 +43,6 @@ class Scratch3ProcedureBlocks {
             // at earlier stack frames for the values of a given parameter (#1729)
             util.initParams();
             for (let i = 0; i < paramIds.length; i++) {
-                console.log(`Setting param ${paramNames[i]} to ${args[paramIds[i]]}`);
                 if (
                     Object.prototype.hasOwnProperty.call(args, paramIds[i]) &&
                     args[paramIds[i]] !== '' &&
