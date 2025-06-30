@@ -44,10 +44,7 @@ class Scratch3ProcedureBlocks {
             util.initParams();
             for (let i = 0; i < paramIds.length; i++) {
                 if (
-                    Object.prototype.hasOwnProperty.call(args, paramIds[i]) &&
-                    args[paramIds[i]] !== '' &&
-                    args[paramIds[i]] !== 'undefined'
-                ) {
+                    Object.prototype.hasOwnProperty.call(args, paramIds[i]) && args[paramIds[i]] !== '') {
                     util.pushParam(paramNames[i], args[paramIds[i]]);
                 } else {
                     util.pushParam(paramNames[i], paramDefaults[i]);
